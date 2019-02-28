@@ -1,4 +1,4 @@
-import ScrollMagic from 'scrollmagic';
+// import ScrollMagic from 'scrollmagic';
 import { projBox } from './variables';
 
 const controller = new ScrollMagic.Controller();
@@ -9,6 +9,7 @@ const pinBrandText = new ScrollMagic.Scene({
   duration: '40%'
 })
   .setPin('.brand-text')
+  .addIndicators({ name: 'brandText' })
   .addTo(controller);
 
 const pinBrandDesc = new ScrollMagic.Scene({
@@ -17,6 +18,7 @@ const pinBrandDesc = new ScrollMagic.Scene({
   duration: '40%'
 })
   .setPin('.brand-description')
+  .addIndicators({ name: 'brandDesc' })
   .addTo(controller);
 
 const about = new ScrollMagic.Scene({
