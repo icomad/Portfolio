@@ -26,6 +26,7 @@ const about = new ScrollMagic.Scene({
   triggerHook: .7
 })
   .setClassToggle('#about', 'fade-in')
+  .addIndicators({ name: 'about' })
   .addTo(controller);
 
 const showintro = new ScrollMagic.Scene({
@@ -33,6 +34,7 @@ const showintro = new ScrollMagic.Scene({
   triggerHook: .8
 })
   .setClassToggle('#showintro', 'fade-in')
+  .addIndicators({ name: 'showcase' })
   .addTo(controller);
 
 projBox.forEach(proj => {
@@ -41,5 +43,6 @@ projBox.forEach(proj => {
     triggerHook: .75,
   })
     .setClassToggle(proj, 'fade-in')
+    .addIndicators({ name: 'proj' })
     .addTo(controller);
 });

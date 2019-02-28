@@ -40,3 +40,13 @@ button{
 a{
   text-decoration: none;
 }
+
+@media screen and (max-width: 780px){
+  *{
+    cursor: auto;
+  }
+  html, body{
+    background: $whiteish;
+    overflow-x: hidden;
+  }
+}

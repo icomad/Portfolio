@@ -17,3 +17,9 @@
   background: $blackish;
   border: none;
 }
+
+@media screen and (max-width: 780px){
+  #cursor{
+    display: none;
+  }
+}

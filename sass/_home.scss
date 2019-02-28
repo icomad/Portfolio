@@ -248,3 +248,24 @@
     }
   }
 }
+
+@media screen and (max-width: 780px){
+  .container{
+    max-width: 650px;
+  }
+
+  #landing{
+    .brand-text{
+      font-size: 2em;
+      top: 15%;
+    }
+    .brand-description{
+      font-size: 1em;
+      top: 25%;
+    }
+  }
+
+  #about{
+    font-size: 1em;
+  }
+}

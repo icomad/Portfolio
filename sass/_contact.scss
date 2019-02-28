@@ -132,3 +132,12 @@
     }
   }
 }
+
+
+@media screen and (max-width: 780px){
+  #toggle-contact{
+    &:hover{
+      color: $yellow;
+    }
+  }
+}

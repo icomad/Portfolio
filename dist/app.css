@@ -22,6 +22,12 @@
   border: none;
 }
 
+@media screen and (max-width: 780px) {
+  #cursor {
+    display: none;
+  }
+}
+
 #toggle-contact {
   position: absolute;
   color: #141414;
@@ -195,6 +201,12 @@
 
 .social-contact .social-link:hover {
   color: #141414;
+}
+
+@media screen and (max-width: 780px) {
+  #toggle-contact:hover {
+    color: #ffd800;
+  }
 }
 
 .menu-open {
@@ -667,6 +679,23 @@
   text-align: center;
 }
 
+@media screen and (max-width: 780px) {
+  .container {
+    max-width: 650px;
+  }
+  #landing .brand-text {
+    font-size: 2em;
+    top: 15%;
+  }
+  #landing .brand-description {
+    font-size: 1em;
+    top: 25%;
+  }
+  #about {
+    font-size: 1em;
+  }
+}
+
 * {
   cursor: none;
   font-family: 'Titillium Web', serif;
@@ -701,5 +730,15 @@ button {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+  * {
+    cursor: auto;
+  }
+  html, body {
+    background: #fefefe;
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=app.css.map */
