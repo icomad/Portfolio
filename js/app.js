@@ -57,10 +57,16 @@ links.forEach(element => {
 
 projBox.forEach(proj => {
   on(proj, 'mouseenter', () => {
+    customCursorOpen();
     boxAnim(proj);
   });
 
   on(proj, 'mouseleave', () => {
-    boxAnimRev(proj);
+    customCursorClose();
+  });
+
+  on(proj, 'click', () => {
+    const href = proj.getAttribute('data-href');
+    window.open(href);
   });
 })

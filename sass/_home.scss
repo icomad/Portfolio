@@ -131,9 +131,9 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
-  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
   justify-content: center;
   
   .proj{
@@ -144,12 +144,11 @@
     opacity: 0;
     transition: all 1s ease;
     transform: translateY(50px);
-    perspective: 100000px;
+    perspective: 50000px;
 
     .cube{
       width: 100%;
       height: 100%;
-      background: $red;
       transform-style: preserve-3d;
       transition: all 1s ease;
       &:hover{
@@ -169,18 +168,70 @@
       }
 
       .front { 
-        transform: translateZ(100px);
-
-        .img-thumb{
-          width: auto;
-          height: auto;
-          max-width: 200px;
-          max-height: 200px;
-        }
+        background: $red;
       }
       .right {
-        transform: rotateY(90deg) translateZ(100px); 
+        transform: rotateY(90deg);
         background: $yellow;
+
+        p{
+          color: black;
+        }
+      }
+    }
+
+    &:nth-child(1){
+      .front{
+        background: url(../dist/images/nba.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(2){
+      .front{
+        background: url(../dist/images/tp.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(3){
+      .front{
+        background: url(../dist/images/rqm.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(4){
+      .front{
+        background: url(../dist/images/sf.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(5){
+      .front{
+        background: url(../dist/images/jsc.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(6){
+      .front{
+        background: url(../dist/images/drum.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(7){
+      .front{
+        background: url(../dist/images/pom.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(8){
+      .front{
+        background: url(../dist/images/mark.png) no-repeat;
+        background-size: cover;
+      }
+    }
+    &:nth-child(9){
+      .front{
+        background: url(../dist/images/dvd.png) no-repeat;
+        background-size: cover;
       }
     }
 

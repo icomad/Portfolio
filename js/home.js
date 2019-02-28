@@ -23,15 +23,20 @@ scrollDownArrowAnim.from('.scroller', .5, {
 })
 
 export const boxAnim = (proj) => {
-  TweenMax.to(proj.children[0], .5, {
-    //width: '0%',
-    //transform: 'rotateY(-90deg)'
+  const cube = proj.children[0];
+  const front = cube.children[0];
+  const right = cube.children[1];
+  const translation = proj.offsetWidth / 2;
+  TweenMax.set(front, {
+    transform: `translateZ(${translation}px)`
+  })
+  TweenMax.set(right, {
+    transform: `rotateY(90deg)translateZ(${translation}px)`
   })
 }
 
 export const boxAnimRev = (proj) => {
-  TweenMax.to(proj.children[0], .5, {
-    //width: '100%',
-    //transform: 'rotateY(0)'
-  })
+  const cube = proj.children[0];
+  const front = cube.children[0];
+  const right = cube.children[1];
 }
