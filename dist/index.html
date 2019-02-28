@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Federico Madaffari</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel='stylesheet' href='../sass/app.css'>
+</head>
+
+<body>
+  <div id='cursor' class="close"></div>
+  <div id='contact-container'>
+    <div id='contact-overlay'>
+      <ul class='contact-list'>
+        <li class="contact-list-item mail-contact">
+          <div class="mail-text">Contact me</div>
+          <a href='mailto:federico.madaffari@outlook.com' class="mail-link">federico.madaffari@outlook.com</a>
+        </li>
+        <li class="contact-list-item social-contact">
+          <div class="social-text">Social</div>
+          <a href='http://github.com/icomad' target="_blank" noreferrer nofollow class="social-link"><i
+              class="fab fa-github fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id='projects-overlay'>
+    <ul class="projects-list">
+      <li class='projects-list-item' id='nba'>
+        <a target='_blank' href='http://nba-rpm.icomad.me'>NBA Real Plus-Minus</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='tp'>
+        <a target='_blank' href='http://tp.icomad.me'>Tribute Page</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='rqm'>
+        <a target='_blank' href='http://rqm.icomad.me'>Random Quote Machine</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='sf'>
+        <a target='_blank' href='http://surveyform.icomad.me'>Survey Form</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='jsc'>
+        <a target='_blank' href='http://jscalc.icomad.me'>JS Calculator</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='dm'>
+        <a target='_blank' href='http://drummachine.icomad.me'>Drum Machine</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='pc'>
+        <a target='_blank' href='http://pomclock.icomad.me'>Pomodoro Clock</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='mv'>
+        <a target='_blank' href='http://markviewer.icomad.me'>Markdown Previewer</a>
+        <div class='strike'></div>
+      </li>
+      <li class='projects-list-item' id='dvd'>
+        <a target='_blank' href='http://dvdlogo.icomad.me'>DVD Logo</a>
+        <div class='strike'></div>
+      </li>
+    </ul>
+  </div>
+
+  <button id='toggle-contact'>Contact</button>
+
+  <button id='open-projects' class="menu-open menu-hover">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </button>
+
+  <button id='close-projects' class="menu-close menu-hover">
+    <span class="one"></span>
+    <span class="two"></span>
+  </button>
+
+  <main id='home' class="section">
+
+    <div id='landing'>
+      <div class="brand-text">Federico Madaffari</div>
+      <div class="brand-description">Full stack web developer</div>
+      <div class="scroller" id='landing-scroller'>
+        <a href='#about'>
+          <span>about</span>
+          <div id='scroll-down' class='arrow down'></div>
+        </a>
+      </div>
+    </div>
+
+    <div id='about'>
+      <div class='container'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla fugiat consequatur? Dicta ipsam maxime
+        doloremque nostrum quisquam omnis ex non excepturi itaque, quae quo sequi fugit nam quaerat amet.Hic aut maiores
+        reprehenderit quam? Repellat odio commodi quasi maxime corporis recusandae iusto velit laudantium magni omnis!
+        Atque modi asperiores cupiditate illo! Sunt, distinctio fugit animi itaque corrupti quae nam?
+      </div>
+    </div>
+
+    <div id='showintro'>
+      <span>Projects Showcase</span>
+      <div class="scroller">
+        <a href='#showcase'>
+          <div id='scroll-down' class='arrow down'></div>
+        </a>
+      </div>
+    </div>
+
+    <div id='showcase'>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'>
+            <img src='./images/nba.png' alt='NBA Real Plus-Minus' class='img-thumb'>
+          </div>
+          <div class='side right'>
+            <h2>NBA Real Plus-Minus</h2>
+            <p>HTML5, SCSS, D3.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Tribute Page</h2>
+            <p>HTML5, CSS3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Random Quote Machine</h2>
+            <p>HTML5, SCSS, React.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Survey Form</h2>
+            <p>HTML5, CSS3, VanillaJS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>JS Calculator</h2>
+            <p>HTML5, SCSS, React.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Drum Machine</h2>
+            <p>HTML5, SCSS, React.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Pomodoro Clock</h2>
+            <p>HTML5, SCSS, React.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>Markdown Previewer</h2>
+            <p>HTML5, SCSS, React.js</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='proj'>
+        <div class='cube'>
+          <div class='side front'></div>
+          <div class='side right'>
+            <h2>DVD Logo</h2>
+            <p>p5.js</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script> -->
+  <script src='bundle.js'></script>
+</body>
+
+</html>

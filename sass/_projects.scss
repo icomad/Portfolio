@@ -1,0 +1,149 @@
+.menu-open{
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 15px;
+
+  &:hover{
+    .one,
+    .two,
+    .three{
+      background: $yellow;
+    }
+  }
+
+  .one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $blackish;
+  }
+  .two{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100%;
+    height: 2px;
+    background: $blackish;
+  }
+  .three{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $blackish;
+  }
+}
+
+.menu-close{
+  display: none;
+  opacity: 0;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 15px;
+  
+  &:hover{
+    .one,
+    .two,
+    .three{
+      background: $blackish;
+    }
+  }
+
+  .one{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 100%;
+    height: 2px;
+    background: $whiteish;
+  }
+  .two{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 2px;
+    background: $whiteish;
+  }
+}
+
+.menu-hover{
+  .one,
+  .two,
+  .three{
+    transition: background .4s ease-in-out;
+  }
+}
+
+#projects-overlay{
+  display: none;
+  opacity: 1;
+  position: fixed;
+  overflow: hidden;
+  top: 0; left: 110%;
+  width: 100%; height: 100vh;
+  background: $blueish;
+  z-index: 1;
+}
+
+.projects-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.projects-list-item{
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  left: -110%;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: .2em;
+  margin: 20px 0px;
+  font-weight: 200;
+  a {
+    color: $whiteish;
+    transition: color .3s ease;
+    &:hover{
+      color: $blackish;
+      &::after{
+        width: 120%;
+      }
+    }
+    &::after{
+      content: ' ';
+      height: 10px;
+      width: 0%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10%;
+      position: absolute;
+      background-color: $yellow;
+      opacity: 1;
+      transition: all .5s ease;
+      z-index: -1;
+    }
+  }
+}

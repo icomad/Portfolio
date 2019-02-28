@@ -1,0 +1,20 @@
+const byId = (id) => document.getElementById(id);
+const qs = (selector) => document.querySelector(selector);
+const qsa = (selector) => document.querySelectorAll(selector);
+
+export const body = qs('body');
+export const html = qs('html');
+export const cursor = byId('cursor');
+export const contactOvr = byId('contact-overlay');
+export const contactCnt = byId('contact-container');
+export const toggleContact = byId('toggle-contact');
+export const openProj = byId('open-projects');
+export const closeProj = byId('close-projects');
+export const projectsOvr = byId('projects-overlay');
+export const links = qsa('a');
+export const mailContact = qs('.mail-contact');
+export const socialContact = qs('.social-contact');
+export const brandText = qs('#home #landing .brand-text');
+export const brandDesc = qs('#home #landing .brand-description');
+export const scrollArrow = qsa('.arrow');
+export const projBox = qsa('#showcase .proj');

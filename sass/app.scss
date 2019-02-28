@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,700');
+@import './variables';
+@import './cursor';
+@import './contact';
+@import './projects';
+@import './home';
+
+
+*{
+  cursor: none;
+  font-family: 'Titillium Web', serif;
+}
+
+
+html, body{
+  height: auto; width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
+  background: $whiteish url(../dist/gbis.svg) no-repeat;
+  background-size: cover;
+}
+
+.noscroll{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+}

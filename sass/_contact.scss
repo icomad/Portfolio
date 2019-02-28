@@ -1,0 +1,134 @@
+#toggle-contact{
+  position: absolute;
+  color: $blackish;
+  top: 50%; left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1em;
+  padding: 0;
+  &:focus{
+    color: $blackish;
+  }
+  &:hover{
+    transition: color .3s ease;
+    color: $whiteish;
+    &::after{
+      width: 100%;
+      left: 0;
+      background: $whiteish;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 0; height: 1px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: $blackish;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+  transition: font-size .3s ease;
+}
+
+#contact-container{
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  background: rgba($whiteish, 0); 
+}
+
+#contact-overlay{
+  display: none;
+  overflow: hidden;
+  top: 50%; left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  // box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+  z-index: 3;
+  background: lighten($blueish, 10%);
+}
+
+.contact-list{
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-list-item{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-contact{
+  position: relative;
+  flex: 1;
+
+  .mail-text{
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .mail-link{
+    letter-spacing: -2px;
+    font-size: 3.5em;
+    color: $whiteish;
+    font-weight: 700;
+    transition: color .3s ease;
+    &:hover{
+      color: $blackish;
+      &::after{
+        width: 120%;
+      }
+    }
+    &::after{
+      content: ' ';
+      height: 15px;
+      width: 0%;
+      top: calc(50% + .4em);
+      left: -10%;
+      position: absolute;
+      background-color: $yellow;
+      opacity: 1;
+      transition: all .5s ease;
+      z-index: -1;
+    }
+  }
+}
+
+.social-contact{
+  flex: .5;
+
+  .social-text{
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .social-link{
+    color: $whiteish;
+    font-weight: 700;
+    transition: color .3s ease;
+    &:hover{
+      color: $blackish;
+    }
+  }
+}

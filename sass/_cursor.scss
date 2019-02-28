@@ -1,0 +1,19 @@
+#cursor{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+.open{
+  width: 40px; height: 40px;
+  background: transparent;
+  border: 2px solid $blackish;
+}
+
+.close{
+  width: 8px; height: 8px;
+  background: $blackish;
+  border: none;
+}
